@@ -40,10 +40,10 @@
   <text id="text7519" opacity=".5" line-height="125%" xml:space="preserve" transform="rotate(90)" font-size="7.5px" y="-326.81229" x="3.6203015" font-family="sans-serif" sodipodi:linespacing="125%" fill="#000000"><tspan id="tspan2946" sodipodi:role="line" x="3.6203015" y="-326.81229">از ctrl+ جهت بالا برای پیمایش به بالا استفاده کنید</tspan></text>
   <path id="path7527" opacity=".5" style="color:#000000" d="m338.53 197.82-13.108-1.2709 7.6547-10.717z" fill-rule="evenodd" transform="matrix(.61496 .045496 .061919 -.45186 112.46 238.8)"/>
  </g>
- <text id="text1920" font-family="sans-serif" font-size="7" transform="scale(1.1307)" y="18.25828" x="176.24451" fill="#ffffff">
-  <tspan id="tspan1668" style="letter-spacing:2.1813" fill="#ffffff" dx="0 -0.57057059 0 0 0 0 0">::TRACING</tspan>
+ <text id="text1920" font-family="sans-serif" font-size="7" transform="scale(1.1307)" y="30" x="35" fill="#ffffff">
+  <tspan id="tspan1668" style="letter-spacing:2.1813" fill="#ffffff" dx="0 -0.57057059 0 0 0 0 0">::TRACING BITMAPS</tspan>
  </text>
- <rect id="d0e10" display="none" height="1e3px" width="264" y="36" x="35"/>
+ <rect id="d0e10" display="none" height="1e3px" width="264" y="46" x="35"/>
  <flowRoot font-family="sans-serif" font-size="7.2" font-style="italic" line-height="150%" fill="#000000">
   <flowRegion>
    <use y="0" x="0" xlink:href="#d0e10"/>
@@ -53,7 +53,7 @@ into a &lt;path&gt; element for your SVG drawing.  These short notes
 should help you become acquainted with how it works.
 </flowDiv>
  </flowRoot>
- <rect id="d0e16" display="none" height="1e3px" width="288" y="76.568" x="10"/>
+ <rect id="d0e16" display="none" height="1e3px" width="288" y="86.568" x="10"/>
  <flowRoot font-size="8" font-family="serif" line-height="133.00000%" fill="#000000">
   <flowRegion>
    <use y="0" x="0" xlink:href="#d0e16"/>
@@ -63,7 +63,7 @@ In the future we expect to allow alternate tracing programs; for now, however, t
 tool is more than sufficient for our needs.
 </flowDiv>
  </flowRoot>
- <rect id="d0e22" display="none" height="1e3px" width="288" y="124.68" x="10"/>
+ <rect id="d0e22" display="none" height="1e3px" width="288" y="134.68" x="10"/>
  <flowRoot font-size="8" font-family="serif" line-height="133.00000%" fill="#000000">
   <flowRegion>
    <use y="0" x="0" xlink:href="#d0e22"/>
@@ -74,7 +74,7 @@ that. What it does is give you a set of curves which you can use as a resource f
 drawing.
 </flowDiv>
  </flowRoot>
- <rect id="d0e25" display="none" height="1e3px" width="288" y="174.45" x="10"/>
+ <rect id="d0e25" display="none" height="1e3px" width="288" y="184.45" x="10"/>
  <flowRoot font-size="8" font-family="serif" line-height="133.00000%" fill="#000000">
   <flowRegion>
    <use y="0" x="0" xlink:href="#d0e25"/>
@@ -84,7 +84,7 @@ we currently have three types of input filters to convert from the raw image to
 something that Potrace can use.
 </flowDiv>
  </flowRoot>
- <rect id="d0e28" display="none" height="1e3px" width="288" y="213.59" x="10"/>
+ <rect id="d0e28" display="none" height="1e3px" width="288" y="223.59" x="10"/>
  <flowRoot font-size="8" font-family="serif" line-height="133.00000%" fill="#000000">
   <flowRegion>
    <use y="0" x="0" xlink:href="#d0e28"/>
@@ -96,7 +96,7 @@ with lighter intermediate images first, getting gradually darker to get the desi
 proportion and complexity of the output path.
 </flowDiv>
  </flowRoot>
- <rect id="d0e31" display="none" height="1e3px" width="288" y="284.65" x="10"/>
+ <rect id="d0e31" display="none" height="1e3px" width="288" y="294.65" x="10"/>
  <flowRoot font-size="8" font-family="serif" line-height="133.00000%" fill="#000000">
   <flowRegion>
    <use y="0" x="0" xlink:href="#d0e31"/>
@@ -105,8 +105,8 @@ proportion and complexity of the output path.
 and select the <flowSpan font-family="sans-serif">Path &gt; Trace Bitmap</flowSpan> item, or <flowSpan font-weight="bold">Shift+Alt+B</flowSpan>.
 </flowDiv>
  </flowRoot>
- <text id="tracing-f01-fa.svgtext7000" font-weight="bold" sodipodi:linespacing="100.00000%" display="block" transform="translate(10 321.05)" xml:space="preserve" line-height="100.00000%" font-size="5.7038" y="99.753128" x="101.47987" font-family="sans-serif" sodipodi:insensitive="true" fill="#000000"><tspan id="tracing-f01-fa.svgtspan7001" sodipodi:role="line" y="99.753128" x="101.47987">Main options within the Trace dialog</tspan></text>
- <image id="tracing-f01-fa.svgimage2577" sodipodi:absref="/potrace-fa.png" xlink:href="potrace-fa.png" transform="translate(10 321.05)" height="91.738" width="189.28" display="block" y="-.000017236" x="65.359"/>
+ <text id="tracing-f01-fa.svgtext7000" font-weight="bold" sodipodi:linespacing="100.00000%" display="block" transform="translate(10 331.03)" xml:space="preserve" line-height="100.00000%" font-size="5.7038" y="99.753128" x="101.47987" font-family="sans-serif" sodipodi:insensitive="true" fill="#000000"><tspan id="tracing-f01-fa.svgtspan7001" sodipodi:role="line" y="99.753128" x="101.47987">Main options within the Trace dialog</tspan></text>
+ <image id="tracing-f01-fa.svgimage2577" sodipodi:absref="/potrace.fa.png" xlink:href="potrace.fa.png" transform="translate(10 331.03)" height="91.738" width="189.28" display="block" y="-.000017236" x="65.359"/>
  <rect id="d0e50" display="none" height="1e3px" width="288" y="0INVALID" x="10"/>
  <flowRoot font-size="8" font-family="serif" line-height="133.00000%" fill="#000000">
   <flowRegion>

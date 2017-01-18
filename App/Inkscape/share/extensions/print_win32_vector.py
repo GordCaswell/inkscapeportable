@@ -25,7 +25,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 '''
 # standard library
 from ctypes import *
@@ -34,8 +34,6 @@ import inkex
 import simplestyle
 import simpletransform
 import cubicsuperpath
-
-inkex.localize()
 
 if not inkex.sys.platform.startswith('win'):
     exit(_("sorry, this will run only on Windows, exiting..."))
@@ -199,7 +197,7 @@ class MyEffect(inkex.Effect):
         if mygdi.StartDocA(self.hDC, byref(docInfo)) < 0:
             exit()                      # user clicked Cancel
 
-        self.scale = (ord(pDevMode[58]) + 256.0*ord(pDevMode[59]))/90    # use PrintQuality from DEVMODE
+        self.scale = (ord(pDevMode[58]) + 256.0*ord(pDevMode[59]))/96    # use PrintQuality from DEVMODE
         self.groupmat = [[[self.scale, 0.0, 0.0], [0.0, self.scale, 0.0]]]
         doc = self.document.getroot()
         self.process_group(doc)

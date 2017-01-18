@@ -5,6 +5,7 @@ import warnings
 from stat import *
 import genericpath
 from genericpath import *
+from genericpath import _unicode
 
 __all__ = ["normcase","isabs","join","splitdrive","split","splitext",
            "basename","dirname","commonprefix","getsize","getmtime",
@@ -42,7 +43,7 @@ def isabs(s):
 def join(s, *p):
     path = s
     for t in p:
-        if (not s) or isabs(t):
+        if (not path) or isabs(t):
             path = t
             continue
         if t[:1] == ':':
@@ -186,7 +187,7 @@ def walk(top, func, arg):
 def abspath(path):
     """Return an absolute path."""
     if not isabs(path):
-        if isinstance(path, unicode):
+        if isinstance(path, _unicode):
             cwd = os.getcwdu()
         else:
             cwd = os.getcwd()
@@ -206,7 +207,10 @@ def realpath(path):
     path = components[0] + ':'
     for c in components[1:]:
         path = join(path, c)
-        path = Carbon.File.FSResolveAliasFile(path, 1)[0].as_pathname()
+        try:
+            path = Carbon.File.FSResolveAliasFile(path, 1)[0].as_pathname()
+        except Carbon.File.Error:
+            pass
     return path
 
-supports_unicode_filenames = False
+supports_unicode_filenames = True

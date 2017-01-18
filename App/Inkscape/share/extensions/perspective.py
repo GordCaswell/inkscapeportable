@@ -14,7 +14,7 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 Perspective approach & math by Dmitry Platonov, shadowjack@mail.ru, 2006
 """
@@ -32,10 +32,7 @@ import inkex
 import simplepath
 import cubicsuperpath
 import simpletransform
-import voronoi2svg
 from ffgeom import *
-
-inkex.localize()
 
 # third party
 try:
@@ -139,7 +136,7 @@ class Project(inkex.Effect):
                 csp[0] = self.project_point(csp[0],m)
                 csp[1] = self.project_point(csp[1],m)
                 csp[2] = self.project_point(csp[2],m)
-        mat = voronoi2svg.Voronoi2svg().invertTransform(mat)
+        mat = simpletransform.invertTransform(mat)
         simpletransform.applyTransformToPath(mat, p)
         path.set('d',cubicsuperpath.formatPath(p))
 
